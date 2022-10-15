@@ -213,6 +213,10 @@ bool IsLastIteration(S idx, S size) {
 
 }  // namespace
 
+uint64_t RulesGenerator::GetSupportedFeatures() const {
+  return FEATURE_PROTO3_OPTIONAL;
+}
+
 bool RulesGenerator::Generate(const protobuf::FileDescriptor *file,
                               const std::string &parameter,
                               protobuf::compiler::GeneratorContext *context,

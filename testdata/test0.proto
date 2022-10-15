@@ -4,5 +4,5 @@ package example;
 message Example {
   string foo = 1;
   string bar = 2;
-  string baz = 3;
+  optional string baz = 3;
 }

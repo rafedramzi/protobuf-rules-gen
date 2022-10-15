@@ -81,7 +81,7 @@ def run_testcase(proto_file, output):
 # Testcases should be <name>.proto as the input and <name>.rules as the output.
 testdata.sort()
 
-for i in xrange(0, len(testdata), 2):
+for i in range(0, len(testdata), 2):
   proto_file = check_proto_file(testdata[i])
   rules_out = check_rules_file(testdata[i + 1])
   run_testcase(proto_file, rules_out)
