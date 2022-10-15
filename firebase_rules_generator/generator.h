@@ -54,6 +54,7 @@ class RulesGenerator : public protobuf::compiler::CodeGenerator {
 
   bool GenerateMap(const protobuf::FieldDescriptor* map_field,
                    protobuf::io::Printer& printer, std::string* error) const;
+  uint64_t GetSupportedFeatures() const override;
 };
 
 }  // namespace experimental
